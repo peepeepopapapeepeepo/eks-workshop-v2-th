@@ -58,6 +58,8 @@ data "aws_eks_cluster_auth" "this" {
 }
 
 provider "aws" {
+  region                 = "ap-southeast-7"
+  skip_region_validation = true
   default_tags {
     tags = local.tags
   }
