@@ -34,7 +34,8 @@ module "external_secrets" {
   source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.32.1//modules/kubernetes-addons/external-secrets"
 
   helm_config = {
-    version = "0.9.5"
+    #version = "0.9.5"
+    version = "0.12.1"
   }
 
   addon_context = var.addon_context
