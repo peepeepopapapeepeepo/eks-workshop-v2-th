@@ -30,7 +30,7 @@ locals {
   crossplane_namespace = "crossplane-system"
   upbound_aws_provider = {
     enable               = true
-    version              = "v0.40.0"
+    version              = "v0.51.0"
     controller_config    = "upbound-aws-controller-config"
     provider_config_name = "aws-provider-config"
     families = [
